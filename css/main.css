@@ -71,19 +71,20 @@ html {
 
 /* stylelint-disable media-feature-name-no-unknown */
 
-/**
 @media (prefers-color-scheme: dark) {
-  Main {
-  background-colour: #111;
+
+  main {
+    background-color: #111;
   }
+
 }
 
-@@media (prefers-reduced-motion) {
+@media (prefers-reduced-motion) {
+
   .ball {
-  animation: none;
-}
+    animation: none;
+  }
 
 }
- */
 
 /* stylelint-enable */

@@ -33,7 +33,7 @@ html {
 
 .gear {
   position: absolute;
-  animation: spin 6s linear infinite;
+  animation: spin 1s infinite;
   opacity: .2;
 }
 
@@ -47,6 +47,14 @@ html {
   right: 15%;
   bottom: -3rem;
   width: 16em;
+}
+
+.main {
+  background-color: #f2f2f2;
+}
+
+.ball {
+  animation: spin 1s infinite;
 }
 
 @keyframes spin {
@@ -64,10 +72,18 @@ html {
 /* stylelint-disable media-feature-name-no-unknown */
 
 /**
- * =============
- * Write your “prefers” media queries here, between these two `stylelint` comments.
- * Unfortunately, Markbot, is a little too old to understand them. :(
- * =============
+@media (prefers-color-scheme: dark) {
+  Main {
+  background-colour: #111;
+  }
+}
+
+@@media (prefers-reduced-motion) {
+  .ball {
+  animation: none;
+}
+
+}
  */
 
 /* stylelint-enable */
